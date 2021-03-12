@@ -1,4 +1,6 @@
 import React from 'react'
+import {addCakeToCartActionHandler} from '../redux/actions'
+
 
 function Home(props) {
     return (
@@ -9,7 +11,7 @@ function Home(props) {
                 <div className="btn-wrapper item">
                     <button 
                     onClick={
-                        ()=>{}
+                        ()=>{props.addCakeToCartActionDispatcher({flavour:'vanilla'})}
                         }>
                         Add Cake To Cart</button>
                 </div>
