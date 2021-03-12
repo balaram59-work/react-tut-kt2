@@ -4,10 +4,8 @@ function Header(props)
     
     return(
         <div>
-             <div className="add-to-cart">
-    <span className="cart-count">0</span>
-                <img src="https://static.vecteezy.com/system/resources/thumbnails/000/496/007/small/Ecommerce_998.jpg" />
-            </div>
+            <h2>This component displays the count of various items in the cart</h2>
+            <h3>no.of cakes in the cart is {props.cakes.length}</h3>
         </div>
     )
 }
